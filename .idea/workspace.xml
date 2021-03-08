@@ -20,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nwxtMStxZG6I7vnY8Y95JXVyGW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,11 +167,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.fdfs" />
-      <item itemvalue="Python.manage" />
-      <item itemvalue="Python.views (1)" />
-      <item itemvalue="Python.views" />
       <item itemvalue="Django Server.mall" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Python.fdfs" />
+      <item itemvalue="Python.views (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -218,6 +222,7 @@
       <workItem from="1614587256366" duration="681000" />
       <workItem from="1614823647857" duration="16000" />
       <workItem from="1615196064068" duration="1347000" />
+      <workItem from="1615204875711" duration="989000" />
     </task>
     <servers />
   </component>
