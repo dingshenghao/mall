@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/jquery.pagination.css">
+    <script src="/static/js/vue-2.5.16.js"></script>
+    <script src="/static/js/host.js"></script>
+    <script src="/static/js/axios.min.js"></script>
+    <script src="/static/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+    <div class="header_con">
+        <div class="header">
+            <div class="welcome fl">欢迎来到天天商城!</div>
+            <div class="fr">
+                <div class="login_btn fl" v-if="username">
+                    欢迎您：<em>[[ username ]]</em>
+                    <span>|</span>
+                    <a href="/logout/" class="quit">退出</a>
+                </div>
+                <div class="login_btn fl" v-else>
+                    <a href="/login/">登录</a>
+                    <span>|</span>
+                    <a href="/register/">注册</a>
+                </div>
+
+                <div class="user_link fl">
+                    <span>|</span>
+                    <a href="/info/">用户中心</a>
+                    <span>|</span>
+                    <a href="/carts/">我的购物车</a>
+                    <span>|</span>
+                    <a href="/orders/info/1/">我的订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search_bar clearfix">
+        <a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
+        <div class="search_wrap fl">
+            <form method="get" action="/search/" class="search_con">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                <input type="text" class="input_text fl" name="q" placeholder="搜索商品">
+                <input type="submit" class="input_btn fr" name="" value="搜索">
+            </form>
+        </div>
+
+        <div @mouseenter="get_carts" class="guest_cart fr" v-cloak>
+            <a href="/carts/" class="cart_name fl">我的购物车</a>
+            <div class="goods_count fl" id="show_count">[[ cart_total_count ]]</div>
+            <ul class="cart_goods_show">
+                <li v-for="sku in carts">
+                    <img :src="sku.default_image_url" alt="商品图片">
+                    <h4>[[ sku.name ]]</h4>
+                    <div>[[ sku.count ]]</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navbar_con">
+        <div class="navbar">
+            <div class="sub_menu_con fl">
+                <h1 class="fl">商品分类</h1>
+                <ul class="sub_menu">
+
+                    {% for category in categories.values() %}
+                        <li>
+                            <div class="level1">
+                                {% for channel in category.channels %}
+                                    <a href="{{ channel.url }}">{{ channel.name }}</a>
+                                {% endfor %}
+                            </div>
+                            <div class="level2">
+                                {% for sub_cat in category.sub_cats %}
+                                    <div class="list_group">
+                                        <div class="group_name fl">{{ sub_cat.name }} &gt;</div>
+                                        <div class="group_detail fl">
+                                            {% for sub_cat3 in sub_cat.sub_cats %}
+                                                <a href="/list/{{ sub_cat3.id }}/1/">{{ sub_cat3.name }}</a>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="{{ breadcrumb.cat1.url }}">{{ breadcrumb.cat1.name }}</a>
+        <span>></span>
+        <a href="javascript:;">{{ breadcrumb.cat2.name }}</a>
+        <span>></span>
+        <a href="javascript:;">{{ breadcrumb.cat3.name }}</a>
+    </div>
+
+    <div class="main_wrap clearfix">
+        <div class="l_wrap fl clearfix">
+            <div class="new_goods">
+                <h3>热销排行</h3>
+                <ul>
+                    <li v-for="hot in hots">
+                        <a :href="'/detail/'+hot.id+'/'"><img :src="hot.default_image_url"></a>
+                        <h4><a :href="'/detail/'+hot.id+'/'">[[ hot.name ]]</a></h4>
+                        <div class="price">￥[[ hot.price ]]</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="r_wrap fr clearfix">
+            <div class="sort_bar">
+                <a href="/list/{{ category.id }}/1/" {% if sort=='default' %} class="active"{% endif %}>默认</a>
+                <a href="/list/{{ category.id }}/1/?sort=price" {% if sort=='price' %} class="active"{% endif %}>价格</a>
+                <a href="/list/{{ category.id }}/1/?sort=hot" {% if sort=='hot' %} class="active"{% endif %}>人气</a>
+            </div>
+
+            <ul class="goods_type_list clearfix">
+                {% for sku in page_skus %}
+                    <li>
+{#                         开发阶段 #}
+                        <a href="/detail/{{ sku.id }}/"><img src="{{ sku.default_image.url }}"></a>
+                        <h4><a href="/detail/{{ sku.id }}/">{{ sku.name }}</a></h4>
+{#                         生产阶段       #}
+{#                         <a href="/detail/{{ sku.id }}.html"><img src="{{ sku.default_image.url }}"></a>#}
+{#                         <h4><a href="/detail/{{ sku.id }}.html">{{ sku.name }}</a></h4>#}
+                        <div class="operate">
+                            <span class="price">￥{{ sku.price }}</span>
+                            <span class="unit">台</span>
+                            <a href="#" class="add_goods" title="加入购物车"></a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <div class="pagenation">
+                <div id="pagination" class="page"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    let category_id ={{ category.id }};
+</script>
+<script src="/static/js/comments.js"></script>
+<script src="/static/js/list.js"></script>
+<script src="/static/js/jquery.pagination.min.js"></script>
+<script>
+    $(function () {
+        $('#pagination').pagination({
+            currentPage: {{ page_num }},
+            totalPage: {{ total_page }},
+            callback: function (current) {
+                location.href = '/list/{{ category.id }}/' + current + '/?sort={{ sort }}';
+            }
+        })
+    });
+</script>
+</body>
+</html>

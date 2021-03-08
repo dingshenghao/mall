@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nwxtMStxZG6I7vnY8Y95JXVyGW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/mall" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mall/templates" />
+      <recent name="$PROJECT_DIR$/mall/static/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mall/templates" />
+      <recent name="$PROJECT_DIR$/mall/apps/goods" />
+      <recent name="$PROJECT_DIR$/mall/utils" />
+      <recent name="$PROJECT_DIR$/mall/apps/payment" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="fdfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mall/utils/fastdfs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mall/utils/fastdfs/fdfs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver  www.tiantian.site:8000" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mall/apps/contents" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mall/apps/contents/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mall/apps/user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mall/apps/user/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mall" type="Python.DjangoServer" factoryName="Django server">
+      <module name="mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.fdfs" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.views (1)" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Django Server.mall" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.fdfs" />
+        <item itemvalue="Python.views (1)" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="" />
+      <created>1612315167370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612315167370</updated>
+      <workItem from="1612315169269" duration="356000" />
+      <workItem from="1612323591013" duration="1095000" />
+      <workItem from="1612324704461" duration="6000" />
+      <workItem from="1612329942552" duration="5917000" />
+      <workItem from="1612353106957" duration="5973000" />
+      <workItem from="1612400060009" duration="55000" />
+      <workItem from="1612400124643" duration="7875000" />
+      <workItem from="1612590396234" duration="1861000" />
+      <workItem from="1612660840442" duration="11479000" />
+      <workItem from="1612847646941" duration="21884000" />
+      <workItem from="1612929410918" duration="11000" />
+      <workItem from="1612929434943" duration="18482000" />
+      <workItem from="1613007408667" duration="29053000" />
+      <workItem from="1613106317719" duration="19868000" />
+      <workItem from="1613178277578" duration="730000" />
+      <workItem from="1613212600643" duration="8066000" />
+      <workItem from="1613266271809" duration="28299000" />
+      <workItem from="1613355351129" duration="13550000" />
+      <workItem from="1613396465290" duration="247000" />
+      <workItem from="1613396830254" duration="189000" />
+      <workItem from="1613397723549" duration="143000" />
+      <workItem from="1613397879400" duration="256000" />
+      <workItem from="1613398145765" duration="303000" />
+      <workItem from="1613435656771" duration="2409000" />
+      <workItem from="1613525111147" duration="7953000" />
+      <workItem from="1613541822101" duration="3015000" />
+      <workItem from="1613547919641" duration="1538000" />
+      <workItem from="1614587256366" duration="681000" />
+      <workItem from="1614823647857" duration="16000" />
+      <workItem from="1615196064068" duration="1347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="65" y="24" width="2093" height="1188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613526477501">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="709" y="265" width="872" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.2089.1184@65.24.2089.1184" timestamp="1612930073898" />
+    <state x="65" y="24" width="2093" height="1188" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613526477501" />
+    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613396847245">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613396847245" />
+    <state x="797" y="24" key="EnvironmentVariablesDialog" timestamp="1613526476102">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="797" y="24" key="EnvironmentVariablesDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613526476102" />
+    <state x="840" y="363" key="FileChooserDialogImpl" timestamp="1615200051743">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="840" y="363" key="FileChooserDialogImpl/65.24.2093.1188@65.24.2093.1188" timestamp="1615200051743" />
+    <state width="2041" height="348" key="GridCell.Tab.0.bottom" timestamp="1615200167475">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.0.bottom/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605970" />
+    <state width="2041" height="348" key="GridCell.Tab.0.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1615200167475" />
+    <state width="2041" height="348" key="GridCell.Tab.0.center" timestamp="1615200167472">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.0.center/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605968" />
+    <state width="2041" height="348" key="GridCell.Tab.0.center/65.24.2093.1188@65.24.2093.1188" timestamp="1615200167472" />
+    <state width="2041" height="348" key="GridCell.Tab.0.left" timestamp="1615200167469">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.0.left/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605968" />
+    <state width="2041" height="348" key="GridCell.Tab.0.left/65.24.2093.1188@65.24.2093.1188" timestamp="1615200167469" />
+    <state width="2041" height="348" key="GridCell.Tab.0.right" timestamp="1615200167474">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.0.right/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605969" />
+    <state width="2041" height="348" key="GridCell.Tab.0.right/65.24.2093.1188@65.24.2093.1188" timestamp="1615200167474" />
+    <state width="2041" height="390" key="GridCell.Tab.1.bottom" timestamp="1613436409146">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.1.bottom/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605972" />
+    <state width="2041" height="390" key="GridCell.Tab.1.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409146" />
+    <state width="2041" height="390" key="GridCell.Tab.1.center" timestamp="1613436409145">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.1.center/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605971" />
+    <state width="2041" height="390" key="GridCell.Tab.1.center/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409145" />
+    <state width="2041" height="390" key="GridCell.Tab.1.left" timestamp="1613436409144">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.1.left/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605970" />
+    <state width="2041" height="390" key="GridCell.Tab.1.left/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409144" />
+    <state width="2041" height="390" key="GridCell.Tab.1.right" timestamp="1613436409145">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state width="2037" height="406" key="GridCell.Tab.1.right/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605972" />
+    <state width="2041" height="390" key="GridCell.Tab.1.right/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409145" />
+    <state x="530" y="106" key="SettingsEditor" timestamp="1613436086488">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="634" y="239" key="SettingsEditor/65.24.2089.1184@65.24.2089.1184" timestamp="1612930209683" />
+    <state x="530" y="106" key="SettingsEditor/65.24.2093.1188@65.24.2093.1188" timestamp="1613436086488" />
+    <state x="921" y="452" width="440" height="303" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1613290204634">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="921" y="452" width="440" height="303" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/65.24.2093.1188@65.24.2093.1188" timestamp="1613290204634" />
+    <state x="849" y="413" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1613057180036">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="849" y="413" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613057180036" />
+    <state x="920" y="332" width="680" height="544" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1613290167679">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="920" y="332" width="680" height="544" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613290167679" />
+    <state x="612" y="254" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1613435836327">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="611" y="253" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/65.24.2089.1184@65.24.2089.1184" timestamp="1612964429072" />
+    <state x="612" y="254" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/65.24.2093.1188@65.24.2093.1188" timestamp="1613435836327" />
+    <state x="750" y="269" width="720" height="678" key="search.everywhere.popup" timestamp="1613531217024">
+      <screen x="65" y="24" width="2093" height="1188" />
+    </state>
+    <state x="750" y="269" width="720" height="678" key="search.everywhere.popup/65.24.2093.1188@65.24.2093.1188" timestamp="1613531217024" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mall/apps/orders/views.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+        <breakpoint enabled="true" type="django-exception">
+          <properties exception="VariableDoesNotExist" />
+        </breakpoint>
+        <breakpoint enabled="true" type="jinja2-exception">
+          <properties exception="TemplateError" />
+        </breakpoint>
+        <breakpoint enabled="true" type="jupyter-exception">
+          <properties exception="BaseException" />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mall$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1613023158092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/contents" />
+    <SUITE FILE_PATH="coverage/mall$fdfs.coverage" NAME="fdfs Coverage Results" MODIFIED="1613547640119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/utils/fastdfs" />
+    <SUITE FILE_PATH="coverage/mall$views.coverage" NAME="views Coverage Results" MODIFIED="1612851484942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/user" />
+    <SUITE FILE_PATH="coverage/mall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1615196232392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

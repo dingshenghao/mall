@@ -1,0 +1,1 @@
+xadmin @ git+git://github.com/sshwsfc/xadmin.git@47481fe8d784f4d6b2900c637467e3ce043fc575

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/vue-2.5.16.js"></script>
+    <script src="/static/js/axios.min.js"></script>
+    <script src="/static/js/host.js"></script>
+</head>
+<body>
+<div class="header_con">
+    <div class="header">
+        <div class="welcome fl">欢迎来到天天商城!</div>
+        <div class="fr">
+            <div class="login_btn fl" v-if="username">
+                欢迎您：<em>[[ username ]]</em>
+                <span>|</span>
+                <a href="/logout/" class="quit">退出</a>
+            </div>
+            <div class="login_btn fl" v-else>
+                <a href="/login/">登录</a>
+                <span>|</span>
+                <a href="/register/">注册</a>
+            </div>
+            <div class="user_link fl">
+                <span>|</span>
+                <a href="/info/">用户中心</a>
+                <span>|</span>
+                <a href="/carts">我的购物车</a>
+                <span>|</span>
+                <a href="/orders/info/1/">我的订单</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search_bar clearfix">
+    <a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
+    <div class="search_wrap fl">
+        <form method="get" action="/search/" class="search_con">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <input type="text" class="input_text fl" name="q" placeholder="搜索商品">
+            <input type="submit" class="input_btn fr" name="" value="搜索">
+        </form>
+    </div>
+</div>
+
+<div class="common_list_con clearfix">
+    <div class="order_success">
+        <p><b>订单支付成功</b></p>
+        <p>您的订单已成功支付，支付交易号：{{ trade_id }}</p>
+        <p><a href="/orders/info/1/">您可以在【用户中心】->【我的订单】查看该订单</a></p>
+    </div>
+</div>
+<script src="/static/js/comments.js"></script>
+<script src="/static/js/base.js"></script>
+</body>
+</html>
