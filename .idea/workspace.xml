@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="" />
+    <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="测试">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/mall/log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/mall/templates/search/search.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +47,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/mall" />
@@ -222,12 +236,37 @@
       <workItem from="1614587256366" duration="681000" />
       <workItem from="1614823647857" duration="16000" />
       <workItem from="1615196064068" duration="1347000" />
-      <workItem from="1615204875711" duration="989000" />
+      <workItem from="1615204875711" duration="1404000" />
+      <workItem from="1615274212418" duration="331000" />
     </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1615206092656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615206092656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="65" y="24" width="2093" height="1188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613526477501">
@@ -287,11 +326,11 @@
     </state>
     <state width="2037" height="406" key="GridCell.Tab.1.right/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605972" />
     <state width="2041" height="390" key="GridCell.Tab.1.right/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409145" />
-    <state x="530" y="106" key="SettingsEditor" timestamp="1613436086488">
+    <state x="530" y="106" key="SettingsEditor" timestamp="1615206060945">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state x="634" y="239" key="SettingsEditor/65.24.2089.1184@65.24.2089.1184" timestamp="1612930209683" />
-    <state x="530" y="106" key="SettingsEditor/65.24.2093.1188@65.24.2093.1188" timestamp="1613436086488" />
+    <state x="530" y="106" key="SettingsEditor/65.24.2093.1188@65.24.2093.1188" timestamp="1615206060945" />
     <state x="921" y="452" width="440" height="303" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1613290204634">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
@@ -341,6 +380,6 @@
     <SUITE FILE_PATH="coverage/mall$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1613023158092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/contents" />
     <SUITE FILE_PATH="coverage/mall$fdfs.coverage" NAME="fdfs Coverage Results" MODIFIED="1613547640119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/utils/fastdfs" />
     <SUITE FILE_PATH="coverage/mall$views.coverage" NAME="views Coverage Results" MODIFIED="1612851484942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/user" />
-    <SUITE FILE_PATH="coverage/mall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1615196232392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1615274298534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
