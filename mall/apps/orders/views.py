@@ -219,8 +219,8 @@ def GoodsComment(request):
         try:
             order_info = OrderInfo.objects.get(order_id=order_id, user_id=user_id, status=4)
         except OrderInfo.DoesNotExist:
-            return HttpResponseForbidden('商品信息出现错误')
-        goods_orders = OrderGoods.objects.filter(order_id=order_info.order_id)
+            return HttpResponseForbidden('商品信息错误')
+        goods_orders = OrderGoods.objects.filter(order_id=order_info.order_id, is_commented=False)
         skus = []
         for goods_order in goods_orders:
             sku_id = goods_order.sku_id
@@ -239,6 +239,7 @@ def GoodsComment(request):
                 skus.append(sku)
             except SKU.DoesNotExist:
                 return HttpResponseForbidden('商品不存在')
+        return render(request, 'goods_judge.html', {'skus': skus})
     elif request.method == 'POST':
         user_id = request.user.id
         query_dict = json.loads(request.body.decode())
@@ -264,9 +265,9 @@ def GoodsComment(request):
         sku.save()
         goods_order_model.save()
         goods_orders_model = OrderGoods.objects.filter(order_id=order_id)
+        is_comment_list = []
         for goods_order in goods_orders_model:
-            if goods_order.is_commented:
-                pass
-        OrderInfo.objects.filter(order_id=order_id, user_id=user_id).update(status=5)
+            is_comment_list.append(goods_order.is_commented)
+        if all(is_comment_list):
+            OrderInfo.objects.filter(order_id=order_id, user_id=user_id).update(status=5)
         return JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK'})
-    return render(request, 'goods_judge.html', {'skus': skus})
