@@ -30,8 +30,11 @@ let app = new Vue({
             } else if (status === 4) {
                 // 待评价
                 location.href = '/orders/comment/?order_id=' + order_id;
-            } else {
-                // 其他：待收货。。。
+            } else if (status === 1) {
+                // 待支付
+                location.href = '/payment/' + order_id;
+            }else {
+                // 其他
                 location.href = '/';
             }
         },

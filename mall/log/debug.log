@@ -14795,3 +14795,530 @@ WARNING 2021-03-17 11:18:43,943 log 222 Forbidden: /orders/comment/
 WARNING 2021-03-17 11:18:43,944 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 403 24
 INFO 2021-03-17 11:18:48,428 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
 INFO 2021-03-17 11:18:48,494 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:24:53,764 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:25:51,377 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 12:25:51,479 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-03-17 12:25:51,481 basehttp 154 "GET /static/js/axios.min.js HTTP/1.1" 200 14355
+INFO 2021-03-17 12:25:51,482 basehttp 154 "GET /static/jquery-3.5.1/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-03-17 12:25:51,483 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-03-17 12:25:51,492 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 82
+INFO 2021-03-17 12:25:51,508 basehttp 154 "GET /static/js/comments.js HTTP/1.1" 200 906
+INFO 2021-03-17 12:25:51,517 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39663
+INFO 2021-03-17 12:25:51,523 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1387
+INFO 2021-03-17 12:25:51,562 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-03-17 12:25:51,573 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 21365
+INFO 2021-03-17 12:25:51,578 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-03-17 12:25:51,995 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 12:25:54,557 basehttp 154 "GET /login/ HTTP/1.1" 200 2512
+INFO 2021-03-17 12:25:54,606 basehttp 154 "GET /static/css/login.css HTTP/1.1" 200 4175
+INFO 2021-03-17 12:25:54,607 basehttp 154 "GET /static/js/login.js HTTP/1.1" 200 1173
+INFO 2021-03-17 12:25:54,657 basehttp 154 "GET /static/images/login_banner.jpg HTTP/1.1" 200 93366
+INFO 2021-03-17 12:25:54,664 basehttp 154 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2021-03-17 12:26:03,485 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2021-03-17 12:26:03,937 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 12:26:04,274 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 12:26:07,523 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+INFO 2021-03-17 12:26:07,559 basehttp 154 "GET /static/css/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2021-03-17 12:26:07,570 basehttp 154 "GET /static/js/list.js HTTP/1.1" 200 1955
+INFO 2021-03-17 12:26:07,581 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2021-03-17 12:26:07,629 basehttp 154 "GET /static/images/shop_cart.png HTTP/1.1" 200 1317
+INFO 2021-03-17 12:26:07,787 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 12:26:07,794 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 12:26:09,393 basehttp 154 "GET /detail/15/ HTTP/1.1" 200 103440
+INFO 2021-03-17 12:26:09,457 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7074
+INFO 2021-03-17 12:26:09,461 basehttp 154 "GET /static/images/cat.jpg HTTP/1.1" 200 4333
+INFO 2021-03-17 12:26:09,469 basehttp 154 "GET /static/js/base.js HTTP/1.1" 200 294
+INFO 2021-03-17 12:26:09,472 basehttp 154 "GET /static/images/selected.png HTTP/1.1" 200 1060
+INFO 2021-03-17 12:26:09,684 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 12:26:09,688 basehttp 154 "GET /comments/15/ HTTP/1.1" 200 49
+INFO 2021-03-17 12:26:09,690 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:26:09,705 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 12:26:09,719 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:26:13,735 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 12:26:15,974 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 246
+INFO 2021-03-17 12:26:20,162 basehttp 154 "GET /detail/14/ HTTP/1.1" 200 103441
+INFO 2021-03-17 12:26:20,394 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:26:20,395 basehttp 154 "GET /comments/14/ HTTP/1.1" 200 49
+INFO 2021-03-17 12:26:20,405 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 246
+INFO 2021-03-17 12:26:20,407 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 12:26:20,413 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:26:22,232 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 12:26:24,050 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 448
+INFO 2021-03-17 12:26:26,602 basehttp 154 "GET /carts/ HTTP/1.1" 200 4455
+INFO 2021-03-17 12:26:26,634 basehttp 154 "GET /static/js/cart.js HTTP/1.1" 200 8966
+INFO 2021-03-17 12:26:28,378 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 5493
+INFO 2021-03-17 12:26:28,410 basehttp 154 "GET /static/js/place_order.js HTTP/1.1" 200 2177
+INFO 2021-03-17 12:26:28,418 basehttp 154 "GET /static/images/pay_icons.png HTTP/1.1" 200 11917
+INFO 2021-03-17 12:26:32,912 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 90
+INFO 2021-03-17 12:26:32,968 basehttp 154 "GET /orders/success/?order_id=20210317122632000000003&payment_amount=13608&pay_method=2 HTTP/1.1" 200 2772
+INFO 2021-03-17 12:26:33,060 basehttp 154 "GET /static/js/order_success.js HTTP/1.1" 200 1628
+INFO 2021-03-17 12:26:33,074 basehttp 154 "GET /static/images/success.png HTTP/1.1" 200 2738
+INFO 2021-03-17 12:26:35,817 basehttp 154 "GET /payment/20210317122632000000003/ HTTP/1.1" 200 900
+INFO 2021-03-17 12:27:12,388 basehttp 154 "GET /payment/status/?charset=utf-8&out_trade_no=20210317122632000000003&method=alipay.trade.page.pay.return&total_amount=13608.00&sign=HhBrDtemYF%2FmP4UKIFbY6uBZwilpRnSDDrLEKJOs0n4GPZbGB7sWwS7WdndUNzgVn5k7yXvBxPqJVAuHLbq%2Fd3Y7rt48YOf980qZHXCLqn8ibg1LubWERKA%2B02l4Lqdtz43FMJxP6R3L0Vcq%2BaY0kw62G8aEYBrhwqpC%2BCWUGXwn8MUb2WUqHEKGCSc%2F2jjZd1Lc0YR%2B%2FHeWcx07oCiPwFukAX5LCKzrnAyG7cFrTihUnQnC9S4BqvVoCb6Zu89C%2FGTIEpNfqqK0Wrac8RPP1PNJictajRGNjTO%2F5xCKuAZpud9%2Bt41ZiNbIHfzdH1TCREGjIrr7NnvVZ7EvtxAUmA%3D%3D&trade_no=2021031722001437360501137643&auth_app_id=2016110200787031&version=1.0&app_id=2016110200787031&sign_type=RSA2&seller_id=2088102181656590&timestamp=2021-03-17+12%3A27%3A08 HTTP/1.1" 200 2318
+INFO 2021-03-17 12:27:15,869 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 12:27:15,919 basehttp 154 "GET /static/js/user_center_order.js HTTP/1.1" 200 1243
+INFO 2021-03-17 12:27:15,949 basehttp 154 "GET /static/images/left_bg.jpg HTTP/1.1" 200 1367
+INFO 2021-03-17 12:27:19,495 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5216
+INFO 2021-03-17 12:27:19,541 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5327
+INFO 2021-03-17 12:27:19,557 basehttp 154 "GET /static/images/stars.png HTTP/1.1" 200 2688
+INFO 2021-03-17 12:27:37,331 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:27:37,374 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:27:37,375 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+WARNING 2021-03-17 12:27:37,476 log 222 Not Found: /favicon.ico
+WARNING 2021-03-17 12:27:37,477 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 8390
+INFO 2021-03-17 12:28:40,206 autoreload 584 Watching for file changes with StatReloader
+WARNING 2021-03-17 12:28:44,374 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:28:44,375 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 403 24
+INFO 2021-03-17 12:28:46,191 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+WARNING 2021-03-17 12:28:48,771 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:28:48,771 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 403 24
+INFO 2021-03-17 12:31:15,060 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:31:16,524 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:31:21,438 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 12:31:21,624 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:31:23,985 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5237
+INFO 2021-03-17 12:31:55,387 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:31:56,882 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:32:00,858 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5237
+INFO 2021-03-17 12:32:01,008 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:32:11,212 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:32:11,263 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:32:11,264 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+INFO 2021-03-17 12:32:15,159 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:32:15,287 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:33:00,837 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:33:02,246 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:33:07,379 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:33:07,523 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:33:16,303 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:33:16,358 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:33:16,359 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+INFO 2021-03-17 12:33:19,402 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:33:19,535 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:35:45,839 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:35:47,318 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:35:50,034 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:35:50,086 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 12:35:50,182 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:35:59,552 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:35:59,595 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:35:59,595 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+INFO 2021-03-17 12:36:22,347 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:36:24,081 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:36:27,067 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:36:27,222 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:36:36,571 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:36:36,623 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:36:36,624 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+INFO 2021-03-17 12:37:48,557 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:37:50,181 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:37:54,713 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:37:56,602 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:37:57,833 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:37:58,185 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:38:07,001 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:38:07,044 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:38:07,045 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 24
+INFO 2021-03-17 12:39:06,559 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:39:10,083 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:39:10,232 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+ERROR 2021-03-17 12:39:23,993 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 275, in GoodsComment
+    return render(request, 'goods_judge.html', {'skus': skus})
+UnboundLocalError: local variable 'skus' referenced before assignment
+ERROR 2021-03-17 12:39:23,996 basehttp 154 "POST /orders/comment/ HTTP/1.1" 500 83257
+ERROR 2021-03-17 12:39:25,865 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 275, in GoodsComment
+    return render(request, 'goods_judge.html', {'skus': skus})
+UnboundLocalError: local variable 'skus' referenced before assignment
+ERROR 2021-03-17 12:39:25,865 basehttp 154 "POST /orders/comment/ HTTP/1.1" 500 83257
+INFO 2021-03-17 12:41:33,112 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:41:34,426 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:41:37,621 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:41:37,780 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:41:48,363 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+ERROR 2021-03-17 12:41:48,620 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 223, in GoodsComment
+    for goods_order in goods_orders:
+UnboundLocalError: local variable 'goods_orders' referenced before assignment
+ERROR 2021-03-17 12:41:48,621 basehttp 154 "GET /orders/comment/ HTTP/1.1" 500 82392
+INFO 2021-03-17 12:42:10,151 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:42:11,682 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:42:15,891 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:42:15,990 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:42:28,032 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+ERROR 2021-03-17 12:42:28,302 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 223, in GoodsComment
+    for goods_order in goods_orders:
+UnboundLocalError: local variable 'goods_orders' referenced before assignment
+ERROR 2021-03-17 12:42:28,304 basehttp 154 "GET /orders/comment/ HTTP/1.1" 500 82382
+INFO 2021-03-17 12:43:15,734 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:43:17,327 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:43:21,527 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:43:21,632 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:43:35,529 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+ERROR 2021-03-17 12:43:35,866 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 219, in GoodsComment
+    order_info = OrderInfo.objects.get(order_id=order_id, user_id=user_id)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/db/models/query.py", line 406, in get
+    raise self.model.DoesNotExist(
+orders.models.OrderInfo.DoesNotExist: OrderInfo matching query does not exist.
+ERROR 2021-03-17 12:43:35,869 basehttp 154 "GET /orders/comment/ HTTP/1.1" 500 90682
+INFO 2021-03-17 12:45:35,151 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:45:36,749 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 12:45:37,966 log 222 Internal Server Error: /orders/comment/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 219, in GoodsComment
+    order_info = OrderInfo.objects.get(order_id=order_id, user_id=user_id,status=4)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/db/models/query.py", line 406, in get
+    raise self.model.DoesNotExist(
+orders.models.OrderInfo.DoesNotExist: OrderInfo matching query does not exist.
+ERROR 2021-03-17 12:45:37,967 basehttp 154 "GET /orders/comment/ HTTP/1.1" 500 90897
+INFO 2021-03-17 12:45:40,321 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:45:40,367 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 12:45:40,463 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:46:15,023 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:46:15,165 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:47:10,963 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:47:12,542 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:47:13,832 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:47:13,991 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:47:22,115 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:47:22,156 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:47:22,157 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 18
+INFO 2021-03-17 12:48:11,227 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:48:12,767 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:48:15,224 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:48:15,515 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:48:31,030 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:48:31,179 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:48:40,954 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+WARNING 2021-03-17 12:48:40,992 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 12:48:40,993 basehttp 154 "GET /orders/comment/ HTTP/1.1" 403 18
+INFO 2021-03-17 12:48:44,260 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:48:44,377 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:50:20,159 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:50:21,653 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:50:23,107 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:50:23,232 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:51:31,557 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:51:35,114 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:51:35,221 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:51:52,608 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:51:52,658 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:51:54,784 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:51:54,910 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:51:56,084 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:51:56,171 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:51:58,907 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:51:59,027 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:54:02,964 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:54:04,503 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:54:08,531 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:54:08,670 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:54:09,845 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:54:09,957 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:54:21,010 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:54:21,059 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:55:00,989 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:55:01,117 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:55:16,879 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:55:16,924 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5363
+INFO 2021-03-17 12:55:16,998 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:55:24,652 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:55:24,703 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:55:24,787 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 12:55:27,586 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:55:27,632 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 12:55:27,697 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:55:30,954 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 12:55:30,992 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 12:55:31,085 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:56:13,363 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 12:56:14,711 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 12:56:28,257 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 12:56:28,306 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5327
+INFO 2021-03-17 12:56:28,412 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 12:56:37,537 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 12:56:37,604 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 12:56:37,703 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 13:00:25,924 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 13:00:27,539 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 13:00:51,642 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 13:00:51,703 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5172
+INFO 2021-03-17 13:00:51,812 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:00:53,202 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:00:53,551 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:00:55,289 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:00:56,901 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 5234
+INFO 2021-03-17 13:00:56,947 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 13:01:08,011 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:01:08,088 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:01:10,481 basehttp 154 "GET /orders/comment/?order_id=20210317122632000000003 HTTP/1.1" 200 4929
+INFO 2021-03-17 13:01:10,524 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 13:01:48,759 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:01:48,840 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:01:53,082 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:01:53,224 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:01:54,665 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:01:54,824 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:01:56,443 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:01:56,858 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:05,805 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+INFO 2021-03-17 13:02:06,137 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:06,149 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:02:08,462 basehttp 154 "GET /detail/14/ HTTP/1.1" 200 103442
+INFO 2021-03-17 13:02:08,548 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 13:02:08,963 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:02:08,972 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:09,011 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:09,015 basehttp 154 "GET /comments/14/ HTTP/1.1" 200 133
+INFO 2021-03-17 13:02:09,035 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:43,148 basehttp 154 "GET /detail/14/ HTTP/1.1" 200 103441
+INFO 2021-03-17 13:02:43,558 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:43,559 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:02:43,561 basehttp 154 "GET /comments/14/ HTTP/1.1" 200 133
+INFO 2021-03-17 13:02:43,562 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:43,567 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:02:43,637 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:49,301 basehttp 154 "GET /detail/15/ HTTP/1.1" 200 103440
+INFO 2021-03-17 13:02:49,644 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:02:49,659 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:49,666 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:49,668 basehttp 154 "GET /comments/15/ HTTP/1.1" 200 133
+INFO 2021-03-17 13:02:49,692 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:57,847 basehttp 154 "GET /detail/13/ HTTP/1.1" 200 103440
+INFO 2021-03-17 13:02:58,092 basehttp 154 "GET /comments/13/ HTTP/1.1" 200 49
+INFO 2021-03-17 13:02:58,112 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:02:58,118 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:02:58,123 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:02:58,154 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:03,989 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103441
+INFO 2021-03-17 13:03:04,194 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:03:04,227 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:04,231 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:03:04,235 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:04,243 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 213
+INFO 2021-03-17 13:03:16,133 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103441
+INFO 2021-03-17 13:03:16,453 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:03:16,464 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:03:16,480 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:16,519 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:16,520 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 213
+INFO 2021-03-17 13:03:18,024 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 13:03:19,599 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 246
+INFO 2021-03-17 13:03:26,245 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+INFO 2021-03-17 13:03:26,546 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:03:26,557 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 246
+INFO 2021-03-17 13:03:27,818 basehttp 154 "GET /detail/2/ HTTP/1.1" 200 104602
+INFO 2021-03-17 13:03:28,140 basehttp 154 "GET /comments/2/ HTTP/1.1" 200 49
+INFO 2021-03-17 13:03:28,145 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:03:28,159 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 246
+INFO 2021-03-17 13:03:28,163 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:28,179 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:03:29,676 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 13:03:31,463 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 494
+INFO 2021-03-17 13:03:32,508 basehttp 154 "GET /carts/ HTTP/1.1" 200 4485
+INFO 2021-03-17 13:03:34,141 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 5524
+INFO 2021-03-17 13:03:37,256 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 90
+INFO 2021-03-17 13:03:37,306 basehttp 154 "GET /orders/success/?order_id=20210317130337000000003&payment_amount=20208&pay_method=2 HTTP/1.1" 200 2772
+INFO 2021-03-17 13:03:38,986 basehttp 154 "GET /payment/20210317130337000000003/ HTTP/1.1" 200 896
+ERROR 2021-03-17 13:04:29,241 log 222 Internal Server Error: /orders/commit/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3413, in _execute_transaction
+    response = self.parse_response(connection, '_')
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3478, in parse_response
+    result = Redis.parse_response(
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ExecAbortError: Transaction discarded because of previous errors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 165, in OrdersCommit
+    pl.execute()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3520, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3418, in _execute_transaction
+    raise errors[0][1]
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3405, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3478, in parse_response
+    result = Redis.parse_response(
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ResponseError: Command # 1 (HDEL cart_3) of pipeline caused error: wrong number of arguments for 'hdel' command
+ERROR 2021-03-17 13:04:29,254 basehttp 154 "POST /orders/commit/ HTTP/1.1" 500 132926
+ERROR 2021-03-17 13:04:30,472 log 222 Internal Server Error: /orders/commit/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3413, in _execute_transaction
+    response = self.parse_response(connection, '_')
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3478, in parse_response
+    result = Redis.parse_response(
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ExecAbortError: Transaction discarded because of previous errors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/orders/views.py", line 165, in OrdersCommit
+    pl.execute()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3520, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3418, in _execute_transaction
+    raise errors[0][1]
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3405, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 3478, in parse_response
+    result = Redis.parse_response(
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/redis/connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ResponseError: Command # 1 (HDEL cart_3) of pipeline caused error: wrong number of arguments for 'hdel' command
+ERROR 2021-03-17 13:04:30,473 basehttp 154 "POST /orders/commit/ HTTP/1.1" 500 132926
+INFO 2021-03-17 13:04:40,954 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 4453
+INFO 2021-03-17 13:04:41,092 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:04:47,772 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 13172
+INFO 2021-03-17 13:04:59,503 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:04:59,957 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:05:07,095 basehttp 154 "GET /carts/ HTTP/1.1" 200 3967
+INFO 2021-03-17 13:05:08,904 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 13172
+INFO 2021-03-17 13:06:32,392 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 9410
+INFO 2021-03-17 13:06:32,562 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:06:35,099 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:06:35,588 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:06:39,357 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+INFO 2021-03-17 13:06:39,766 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:06:39,768 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:06:41,237 basehttp 154 "GET /detail/2/ HTTP/1.1" 200 104602
+INFO 2021-03-17 13:06:41,714 basehttp 154 "GET /comments/2/ HTTP/1.1" 200 49
+INFO 2021-03-17 13:06:41,716 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:06:41,723 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:06:41,725 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:06:41,743 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:06:43,738 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 13:06:45,695 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 292
+INFO 2021-03-17 13:06:51,432 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+INFO 2021-03-17 13:06:51,717 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:06:51,720 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 292
+INFO 2021-03-17 13:06:53,119 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103441
+INFO 2021-03-17 13:06:53,356 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:06:53,363 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 292
+INFO 2021-03-17 13:06:53,401 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:06:53,410 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 13:06:53,412 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 213
+INFO 2021-03-17 13:06:54,938 basehttp 154 "POST /carts/ HTTP/1.1" 200 69
+INFO 2021-03-17 13:06:57,529 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 494
+INFO 2021-03-17 13:06:59,772 basehttp 154 "GET /carts/ HTTP/1.1" 200 4485
+INFO 2021-03-17 13:07:01,306 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 5524
+INFO 2021-03-17 13:07:05,127 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 90
+INFO 2021-03-17 13:07:05,176 basehttp 154 "GET /orders/success/?order_id=20210317130705000000003&payment_amount=20208&pay_method=2 HTTP/1.1" 200 2772
+INFO 2021-03-17 13:07:07,156 basehttp 154 "GET /payment/20210317130705000000003/ HTTP/1.1" 200 898
+INFO 2021-03-17 13:07:40,187 basehttp 154 "GET /payment/status/?charset=utf-8&out_trade_no=20210317130705000000003&method=alipay.trade.page.pay.return&total_amount=20208.00&sign=D%2BOSo%2BkcNjhXihHlYE9BHjNYxn9%2ByFJVLSUTUN%2FSM9b0C3559fmkwu%2FNlUwDz2n6jCG38D%2FIWh0udFmvoLGuTTfauoJsneiQgCPjcRxrtzgaIWPN4I8wLcxGCa%2F%2BNvT1rdc8gOJD8JlI0Sgh0A0RKEJGQl8zPyzVQdV1fHoknQ3f3P57du0rgOSHWhzhnHn%2BIozRYl%2FsdLJG1p%2FbPJR1hGN0LRPWlIp7iJXKeUdSRhNRe7I8apeMbFWKrBEPXWWR6la0DAaTHXmrDub%2FBYKUR0KGbfGVuVyAqFJ%2BTeh5%2Bg3YgBPqba7Cih8%2BM5p%2F7T0Qsm7pzm069mEOH4CEOALnEg%3D%3D&trade_no=2021031722001437360501137644&auth_app_id=2016110200787031&version=1.0&app_id=2016110200787031&sign_type=RSA2&seller_id=2088102181656590&timestamp=2021-03-17+13%3A07%3A36 HTTP/1.1" 200 2318
+INFO 2021-03-17 13:07:43,069 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 11428
+INFO 2021-03-17 13:07:46,549 basehttp 154 "GET /orders/comment/?order_id=20210317130705000000003 HTTP/1.1" 200 5245
+INFO 2021-03-17 13:07:46,590 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 304 0
+INFO 2021-03-17 13:08:17,660 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:08:17,749 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 11428
+INFO 2021-03-17 13:09:53,348 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 11428
+INFO 2021-03-17 13:09:53,536 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 13:09:56,436 basehttp 154 "GET /orders/comment/?order_id=20210317130705000000003 HTTP/1.1" 200 5284
+INFO 2021-03-17 13:09:56,479 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5264
+INFO 2021-03-17 13:10:20,354 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:10:41,728 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:10:41,825 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 11428
+INFO 2021-03-17 13:10:55,038 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:10:55,606 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:10:58,921 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+INFO 2021-03-17 13:10:59,177 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:10:59,183 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:11:00,562 basehttp 154 "GET /detail/2/ HTTP/1.1" 200 104602
+INFO 2021-03-17 13:11:00,961 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 13:11:00,962 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:11:00,963 basehttp 154 "GET /comments/2/ HTTP/1.1" 200 187
+INFO 2021-03-17 13:11:00,964 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 13:11:00,969 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 13:11:08,179 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 13:11:08,573 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
