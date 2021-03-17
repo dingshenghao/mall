@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="商品评价">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/mall/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall/static/js/user_center_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mall/static/js/user_center_order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +245,7 @@
       <workItem from="1615685094732" duration="180000" />
       <workItem from="1615904344011" duration="14000" />
       <workItem from="1615904370141" duration="12575000" />
-      <workItem from="1615954881896" duration="3839000" />
+      <workItem from="1615954881896" duration="4269000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1615206092656</created>
@@ -305,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615957966660</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="商品评价">
+      <created>1615958737977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615958737977</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
