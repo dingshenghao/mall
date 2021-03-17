@@ -4,9 +4,11 @@ from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage
 
 from mall.utils.response_code import RETCODE
+from user.models import User
 from .models import GoodsCategory, SKU, SPU, SKUSpecification, SPUSpecification, SpecificationOption, GoodsVisitCount
 from contents.utils import get_categories
 from .utils import get_breadcrumb
+from orders.models import OrderGoods, OrderInfo
 
 
 def GoodsList(request, category_id, page_num):
@@ -131,3 +133,28 @@ def GoodsVisit(request, category_id):
         except GoodsVisitCount.DoesNotExist:
             GoodsVisitCount.objects.create(category_id=category_id, count=1)
     return JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK'})
+
+
+def GoodsComments(request, sku_id):
+    if request.method == 'GET':
+        order_goods_models = OrderGoods.objects.filter(sku_id=sku_id, is_commented=True)
+        comment_list = []
+        for order_goods_model in order_goods_models:
+            try:
+                order_info = OrderInfo.objects.get(order_id=order_goods_model.order_id)
+            except OrderInfo.DoesNotExist:
+                return HttpResponseForbidden('商品信息出现错误')
+            user_id = order_info.user_id
+            try:
+                user = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return HttpResponseForbidden('用户信息错误')
+            comment = {
+                'name': user.username,
+                'content': order_goods_model.comment,
+                'score': order_goods_model.score
+            }
+
+            comment_list.append(comment)
+            print(comment_list)
+        return JsonResponse({"code": RETCODE.OK, 'errmsg': 'OK', 'comment_list': comment_list})

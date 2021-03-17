@@ -23,4 +23,6 @@ urlpatterns = [
     path('hot/<int:category_id>/', views.GoodsHotList, name='goods_list_hot'),
     path('detail/<int:sku_id>/', views.GoodsDetail, name='goods_detail'),
     path('visit/<int:category_id>/', views.GoodsVisit, name='visit'),
+
+    path('comments/<int:sku_id>/', views.GoodsComments, name='goods_comments')
 ]

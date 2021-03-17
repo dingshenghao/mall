@@ -13711,3 +13711,1087 @@ INFO 2021-03-17 09:35:47,480 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200
 INFO 2021-03-17 09:35:47,496 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
 INFO 2021-03-17 09:35:50,907 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
 INFO 2021-03-17 09:35:52,930 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 09:44:04,365 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 09:44:04,574 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 09:44:10,620 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+INFO 2021-03-17 09:44:10,761 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 09:44:10,763 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 09:44:12,097 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103842
+WARNING 2021-03-17 09:44:12,246 log 222 Not Found: /comments/16/
+WARNING 2021-03-17 09:44:12,252 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8195
+INFO 2021-03-17 09:44:12,259 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 09:44:12,271 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 09:44:12,281 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 09:44:12,302 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 09:48:17,087 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/urls.py changed, reloading.
+INFO 2021-03-17 09:48:18,034 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:03:12,473 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:03:13,389 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:03:20,126 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:03:20,128 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+WARNING 2021-03-17 10:03:20,320 log 222 Not Found: /favicon.ico
+WARNING 2021-03-17 10:03:20,322 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 8389
+INFO 2021-03-17 10:04:31,212 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:04:32,128 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:04:35,310 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:04:35,313 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:04:56,345 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:04:57,208 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:04:59,087 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:04:59,094 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:05:49,895 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:05:54,118 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:05:54,123 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:06:07,061 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:06:07,063 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:07:48,836 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:07:53,132 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:07:53,134 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:08:09,475 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/urls.py changed, reloading.
+INFO 2021-03-17 10:08:10,453 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:08:13,580 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:08:13,581 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:08:35,856 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:08:37,163 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:08:37,219 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:08:37,427 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+WARNING 2021-03-17 10:08:37,433 log 222 Not Found: /comments/16/
+WARNING 2021-03-17 10:08:37,450 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8195
+INFO 2021-03-17 10:08:37,471 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:08:37,478 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:08:37,482 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:08:37,495 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:29,456 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:09:29,610 log 222 Not Found: /comments/16/
+INFO 2021-03-17 10:09:29,627 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+WARNING 2021-03-17 10:09:29,631 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8195
+INFO 2021-03-17 10:09:29,637 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:29,643 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:09:29,643 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:09:29,657 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:31,250 basehttp 154 "GET /detail/15/ HTTP/1.1" 200 102650
+WARNING 2021-03-17 10:09:31,384 log 222 Not Found: /comments/15/
+WARNING 2021-03-17 10:09:31,391 basehttp 154 "GET /comments/15/ HTTP/1.1" 404 8195
+INFO 2021-03-17 10:09:31,400 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:09:31,407 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:31,408 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:09:31,422 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:35,300 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:09:35,315 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:10:13,383 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:10:13,525 log 222 Not Found: /comments/16/
+WARNING 2021-03-17 10:10:13,553 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8195
+INFO 2021-03-17 10:10:13,557 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:10:13,557 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:10:13,558 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:10:13,558 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:10:13,579 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+WARNING 2021-03-17 10:10:14,976 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+WARNING 2021-03-17 10:10:21,368 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+WARNING 2021-03-17 10:10:22,904 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:10:24,704 basehttp 154 "GET / HTTP/1.1" 200 96379
+WARNING 2021-03-17 10:10:24,767 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:10:24,902 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:10:24,928 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:10:27,590 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+WARNING 2021-03-17 10:10:27,644 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:10:27,734 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:10:27,735 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:10:28,977 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:10:29,018 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:10:29,151 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+WARNING 2021-03-17 10:10:29,166 log 222 Not Found: /comments/16/
+INFO 2021-03-17 10:10:29,169 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+WARNING 2021-03-17 10:10:29,177 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8195
+INFO 2021-03-17 10:10:29,178 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:10:29,193 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:11:05,875 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:11:08,800 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:11:08,847 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+WARNING 2021-03-17 10:11:08,982 log 222 Not Found: /comments/16/
+INFO 2021-03-17 10:11:08,986 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+WARNING 2021-03-17 10:11:08,988 basehttp 154 "GET /comments/16/ HTTP/1.1" 404 8392
+INFO 2021-03-17 10:11:09,004 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:11:09,006 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:11:09,013 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:11:09,029 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:11:24,623 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/urls.py changed, reloading.
+INFO 2021-03-17 10:11:25,582 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:11:28,139 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:11:28,180 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:11:28,318 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:11:28,347 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:11:28,369 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:11:28,378 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:11:28,401 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:11:28,550 log 222 Internal Server Error: /comments/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 147, in GoodsComments
+    user_id = order_info.user_id
+AttributeError: 'QuerySet' object has no attribute 'user_id'
+ERROR 2021-03-17 10:11:28,552 basehttp 154 "GET /comments/16/ HTTP/1.1" 500 77609
+INFO 2021-03-17 10:12:25,997 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:12:26,907 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:12:30,626 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:12:30,681 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:12:30,827 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:12:30,839 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:12:30,855 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:12:30,858 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:12:30,949 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:12:30,983 log 222 Internal Server Error: /comments/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 147, in GoodsComments
+    user_id = order_info.user_id
+AttributeError: 'QuerySet' object has no attribute 'user_id'
+ERROR 2021-03-17 10:12:30,984 basehttp 154 "GET /comments/16/ HTTP/1.1" 500 77609
+INFO 2021-03-17 10:12:54,160 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:12:57,130 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:12:57,172 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:12:57,304 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:12:57,352 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:12:57,370 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:12:57,371 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:12:57,379 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:12:57,437 log 222 Internal Server Error: /comments/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 158, in GoodsComments
+    return render(request, 'detail.html', {'comment_list': comment_list})
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 69, in top-level template code
+    {% for category in categories.values() %}
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'categories' is undefined
+ERROR 2021-03-17 10:12:57,438 basehttp 154 "GET /comments/16/ HTTP/1.1" 500 120128
+INFO 2021-03-17 10:15:05,816 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:15:07,085 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:15:07,129 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:15:07,270 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:15:07,308 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:15:07,309 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:15:07,317 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:15:07,341 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:15:07,387 log 222 Internal Server Error: /comments/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 158, in GoodsComments
+    return render(request, 'detail.html', {'comment_list': comment_list})
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 69, in top-level template code
+    {% for category in categories.values() %}
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'categories' is undefined
+ERROR 2021-03-17 10:15:07,388 basehttp 154 "GET /comments/16/ HTTP/1.1" 500 120128
+INFO 2021-03-17 10:15:25,900 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:16:27,891 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:16:28,835 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:16:32,032 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:16:32,070 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:16:32,214 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:16:32,255 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:16:32,264 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:16:32,270 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:16:32,271 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:16:32,274 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:11,090 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:17:11,130 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:17:11,255 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:17:11,301 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:17:11,302 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:17:11,308 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:11,314 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:17:11,321 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:12,886 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:17:12,931 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:17:13,088 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:17:13,090 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:13,091 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:17:13,094 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:17:13,097 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:17:13,114 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:17,327 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:17:17,354 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-03-17 10:17:17,357 basehttp 154 "GET /static/js/axios.min.js HTTP/1.1" 200 14355
+INFO 2021-03-17 10:17:17,359 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 82
+INFO 2021-03-17 10:17:17,360 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-03-17 10:17:17,361 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39663
+INFO 2021-03-17 10:17:17,373 basehttp 154 "GET /static/js/comments.js HTTP/1.1" 200 906
+INFO 2021-03-17 10:17:17,401 basehttp 154 "GET /static/js/base.js HTTP/1.1" 200 294
+INFO 2021-03-17 10:17:17,416 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7049
+INFO 2021-03-17 10:17:17,417 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 21365
+WARNING 2021-03-17 10:17:17,430 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:17:17,433 basehttp 154 "GET /static/images/selected.png HTTP/1.1" 200 1060
+INFO 2021-03-17 10:17:17,433 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-03-17 10:17:17,601 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:17:17,616 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:17:17,619 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:17:17,627 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:17,635 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:17:17,641 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:18:01,224 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:18:01,252 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7050
+WARNING 2021-03-17 10:18:01,279 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+WARNING 2021-03-17 10:18:01,416 log 222 Not Found: /detail/16/undefined/hot/113/
+WARNING 2021-03-17 10:18:01,421 basehttp 154 "GET /detail/16/undefined/hot/113/ HTTP/1.1" 404 8441
+INFO 2021-03-17 10:18:01,449 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:18:01,450 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:01,459 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:18:01,469 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:18:01,470 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:05,103 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:18:05,132 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 82
+INFO 2021-03-17 10:18:05,134 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-03-17 10:18:05,135 basehttp 154 "GET /static/js/axios.min.js HTTP/1.1" 200 14355
+INFO 2021-03-17 10:18:05,135 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39663
+INFO 2021-03-17 10:18:05,136 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-03-17 10:18:05,181 basehttp 154 "GET /static/js/comments.js HTTP/1.1" 200 906
+INFO 2021-03-17 10:18:05,184 basehttp 154 "GET /static/js/base.js HTTP/1.1" 200 294
+INFO 2021-03-17 10:18:05,199 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7050
+INFO 2021-03-17 10:18:05,200 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 21365
+INFO 2021-03-17 10:18:05,206 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2021-03-17 10:18:05,212 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:18:05,213 basehttp 154 "GET /static/images/selected.png HTTP/1.1" 200 1060
+WARNING 2021-03-17 10:18:05,354 log 222 Not Found: /detail/16/undefined/hot/113/
+WARNING 2021-03-17 10:18:05,355 basehttp 154 "GET /detail/16/undefined/hot/113/ HTTP/1.1" 404 8441
+INFO 2021-03-17 10:18:05,383 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:05,385 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:18:05,390 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:18:05,397 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:18:05,412 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:29,758 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:18:29,785 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7049
+WARNING 2021-03-17 10:18:29,811 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:18:29,962 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:18:29,978 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:18:29,983 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:18:29,986 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:29,987 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:18:29,991 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:32,937 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:18:32,960 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2021-03-17 10:18:32,966 basehttp 154 "GET /static/js/axios.min.js HTTP/1.1" 200 14355
+INFO 2021-03-17 10:18:32,969 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 82
+INFO 2021-03-17 10:18:32,971 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39663
+INFO 2021-03-17 10:18:32,971 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2021-03-17 10:18:33,009 basehttp 154 "GET /static/js/comments.js HTTP/1.1" 200 906
+INFO 2021-03-17 10:18:33,016 basehttp 154 "GET /static/js/base.js HTTP/1.1" 200 294
+INFO 2021-03-17 10:18:33,028 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7049
+INFO 2021-03-17 10:18:33,031 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 21365
+INFO 2021-03-17 10:18:33,037 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2021-03-17 10:18:33,042 basehttp 154 "GET /static/images/selected.png HTTP/1.1" 200 1060
+WARNING 2021-03-17 10:18:33,044 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:18:33,206 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:18:33,219 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:18:33,223 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:18:33,229 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:18:33,233 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:18:33,247 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:19:39,490 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:19:40,493 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:19:44,629 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:19:44,656 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+WARNING 2021-03-17 10:19:44,684 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:19:44,836 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:19:44,854 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:19:44,865 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:19:44,866 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:19:44,879 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 159
+INFO 2021-03-17 10:19:44,891 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:20:38,494 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:20:39,361 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:20:42,259 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:20:42,291 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+WARNING 2021-03-17 10:20:42,309 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+WARNING 2021-03-17 10:20:42,476 log 222 Forbidden: /comments/16/
+INFO 2021-03-17 10:20:42,478 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+WARNING 2021-03-17 10:20:42,480 basehttp 154 "GET /comments/16/ HTTP/1.1" 403 24
+INFO 2021-03-17 10:20:42,485 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:20:42,490 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:20:42,491 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:20:42,505 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:21:25,203 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:21:26,153 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:21:30,399 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:21:30,426 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+WARNING 2021-03-17 10:21:30,449 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:21:30,589 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:21:30,618 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:21:30,630 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 121
+INFO 2021-03-17 10:21:30,639 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:21:30,641 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:21:30,656 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:21:55,257 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:21:55,259 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+WARNING 2021-03-17 10:21:55,409 log 222 Not Found: /favicon.ico
+WARNING 2021-03-17 10:21:55,410 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 8390
+INFO 2021-03-17 10:23:46,860 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:23:46,913 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7036
+WARNING 2021-03-17 10:23:46,923 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:23:47,103 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:23:47,104 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:23:47,104 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:23:47,115 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:23:47,116 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 121
+INFO 2021-03-17 10:23:47,130 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:26:37,443 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:26:38,428 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 10:26:42,340 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:26:42,374 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+WARNING 2021-03-17 10:26:42,399 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:26:42,559 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:26:42,573 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:26:42,574 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:26:42,575 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:26:42,578 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:26:42,594 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+ERROR 2021-03-17 10:27:16,567 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:27:16,569 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:28:03,294 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:28:03,296 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:28:05,043 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:28:05,045 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:28:41,429 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 10:28:42,359 autoreload 584 Watching for file changes with StatReloader
+ERROR 2021-03-17 10:28:44,556 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ comment_model.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'comment_model' is undefined
+ERROR 2021-03-17 10:28:44,559 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156650
+ERROR 2021-03-17 10:30:51,823 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:30:51,824 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:31:19,228 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:31:19,228 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:31:36,182 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:31:36,183 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+ERROR 2021-03-17 10:33:30,915 log 222 Internal Server Error: /detail/16/
+Traceback (most recent call last):
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ding/PycharmProjects/mall/mall/apps/goods/views.py", line 101, in GoodsDetail
+    return render(request, 'detail.html', context=context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ding/PycharmProjects/mall/mall/templates/detail.html", line 183, in top-level template code
+    <b>{{ item.name }}</b>
+  File "/home/ding/.virtualenvs/mall/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'item' is undefined
+ERROR 2021-03-17 10:33:30,916 basehttp 154 "GET /detail/16/ HTTP/1.1" 500 156569
+INFO 2021-03-17 10:34:22,877 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:34:22,929 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7036
+WARNING 2021-03-17 10:34:22,941 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:34:23,081 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:34:23,111 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:34:23,130 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:34:23,144 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:34:23,151 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:34:23,172 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+WARNING 2021-03-17 10:35:36,827 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:35:38,066 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:35:38,114 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 6925
+WARNING 2021-03-17 10:35:38,116 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:35:38,256 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:35:38,277 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:35:38,281 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:35:38,282 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:35:38,289 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:35:38,297 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:35:49,211 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+INFO 2021-03-17 10:35:49,238 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 6922
+WARNING 2021-03-17 10:35:49,256 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:35:49,421 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:35:49,422 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:35:49,444 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:35:49,444 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:35:49,449 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:35:49,460 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:35:53,984 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 102651
+WARNING 2021-03-17 10:35:54,034 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:35:54,036 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:35:54,184 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:35:54,186 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:35:54,194 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:35:54,196 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:35:54,197 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:35:54,209 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:39:32,530 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103408
+INFO 2021-03-17 10:39:32,577 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+WARNING 2021-03-17 10:39:32,577 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:39:32,578 basehttp 154 "GET /static/images/cat.jpg HTTP/1.1" 200 4333
+INFO 2021-03-17 10:39:32,737 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:39:32,742 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:39:32,747 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:39:32,750 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:39:32,752 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:39:32,769 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:40:01,457 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103408
+WARNING 2021-03-17 10:40:01,497 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:40:01,501 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:40:01,647 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:40:01,648 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:40:01,650 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:40:01,653 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:40:01,664 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:40:01,674 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:41:18,726 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103422
+INFO 2021-03-17 10:41:18,760 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:41:18,926 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:41:18,938 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:41:18,940 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:41:18,942 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:41:18,945 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:41:18,961 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:41:37,926 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103426
+INFO 2021-03-17 10:41:38,090 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:41:38,101 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:41:38,101 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:41:38,105 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:41:38,108 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:41:38,125 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:42:48,657 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103426
+INFO 2021-03-17 10:42:48,690 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:42:48,854 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:42:48,859 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:42:48,860 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:42:48,869 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:42:48,870 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:42:48,889 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:43:58,822 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103414
+INFO 2021-03-17 10:43:58,854 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:43:59,114 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:43:59,118 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:43:59,121 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:43:59,124 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:43:59,124 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:43:59,130 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:44:02,344 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103414
+INFO 2021-03-17 10:44:02,483 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:44:02,497 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:44:02,497 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:44:02,498 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:44:02,514 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:44:03,915 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103414
+INFO 2021-03-17 10:44:04,060 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:44:04,072 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:44:04,075 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:44:04,075 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:44:04,079 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:47:07,899 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103441
+INFO 2021-03-17 10:47:07,930 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 7074
+INFO 2021-03-17 10:47:08,103 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 133
+INFO 2021-03-17 10:47:08,110 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:47:08,116 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 10:47:08,117 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:47:08,118 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:47:08,119 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:47:18,651 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 10:47:18,672 basehttp 154 "GET /static/jquery-3.5.1/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-03-17 10:47:18,682 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1387
+INFO 2021-03-17 10:47:18,682 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2021-03-17 10:47:18,881 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:47:21,737 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:47:21,753 basehttp 154 "GET /static/css/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2021-03-17 10:47:21,758 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2021-03-17 10:47:21,762 basehttp 154 "GET /static/js/user_center_order.js HTTP/1.1" 200 1243
+INFO 2021-03-17 10:47:21,817 basehttp 154 "GET /static/images/left_bg.jpg HTTP/1.1" 200 1367
+INFO 2021-03-17 10:47:23,520 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5541
+INFO 2021-03-17 10:47:23,539 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5211
+INFO 2021-03-17 10:47:23,544 basehttp 154 "GET /static/images/stars.png HTTP/1.1" 200 2688
+INFO 2021-03-17 10:48:10,423 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:48:10,462 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:48:13,272 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 10:48:13,439 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:48:36,588 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+INFO 2021-03-17 10:48:36,618 basehttp 154 "GET /static/js/list.js HTTP/1.1" 200 1955
+INFO 2021-03-17 10:48:36,629 basehttp 154 "GET /static/images/shop_cart.png HTTP/1.1" 200 1317
+INFO 2021-03-17 10:48:36,747 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 10:48:36,749 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:48:37,831 basehttp 154 "GET /detail/2/ HTTP/1.1" 200 104602
+INFO 2021-03-17 10:48:37,860 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:48:38,009 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 10:48:38,018 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:48:38,028 basehttp 154 "GET /comments/2/ HTTP/1.1" 200 49
+INFO 2021-03-17 10:48:38,029 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:48:38,038 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:48:43,161 basehttp 154 "GET /detail/1/ HTTP/1.1" 200 104600
+INFO 2021-03-17 10:48:43,302 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:48:43,305 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 10:48:43,306 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:48:43,309 basehttp 154 "GET /comments/1/ HTTP/1.1" 200 241
+INFO 2021-03-17 10:48:43,325 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:48:51,014 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 10:48:51,186 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:50:18,354 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 10:50:18,499 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:50:18,528 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:50:20,363 basehttp 154 "GET /carts/ HTTP/1.1" 200 3967
+INFO 2021-03-17 10:50:20,391 basehttp 154 "GET /static/js/cart.js HTTP/1.1" 200 8966
+INFO 2021-03-17 10:50:22,267 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:50:47,595 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:50:47,679 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:50:49,205 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5613
+INFO 2021-03-17 10:51:40,477 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:51:40,512 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:52:36,641 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 10:52:36,709 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+WARNING 2021-03-17 10:52:39,143 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:53:17,369 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 10:53:17,425 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:53:17,471 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:53:19,128 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5652
+WARNING 2021-03-17 10:53:19,170 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:53:39,886 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:53:39,921 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 10:53:40,016 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:54:10,429 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 10:54:10,485 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:54:10,536 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:54:23,032 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 10:54:23,083 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:54:23,138 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 10:54:24,639 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5568
+WARNING 2021-03-17 10:54:24,678 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:54:36,170 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:54:36,207 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 10:54:36,303 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:56:21,044 basehttp 154 "GET / HTTP/1.1" 200 96379
+WARNING 2021-03-17 10:56:21,104 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:56:21,278 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:56:26,189 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+WARNING 2021-03-17 10:56:26,250 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:56:26,367 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:56:26,368 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 10:56:27,387 basehttp 154 "GET /detail/1/ HTTP/1.1" 200 104600
+WARNING 2021-03-17 10:56:27,425 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1680
+INFO 2021-03-17 10:56:27,431 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 10:56:27,583 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 10:56:27,601 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 10:56:27,609 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:56:27,613 basehttp 154 "GET /comments/1/ HTTP/1.1" 200 151
+INFO 2021-03-17 10:56:27,630 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 10:56:50,606 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 10:56:50,773 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:02:10,669 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 11:02:11,730 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:03:53,497 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 11:03:54,397 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:04:00,433 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 11:04:01,623 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5568
+INFO 2021-03-17 11:04:01,643 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5264
+INFO 2021-03-17 11:04:21,917 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:04:21,925 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:04:23,879 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:04:23,888 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:05,585 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:05,594 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:06,048 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:06,057 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:06,284 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:06,293 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:06,472 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:06,481 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:06,764 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:06,773 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:07,006 basehttp 154 "POST /orders/comment/ HTTP/1.1" 302 0
+INFO 2021-03-17 11:06:07,015 basehttp 154 "GET /orders/comment/ HTTP/1.1" 200 4644
+INFO 2021-03-17 11:06:20,605 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:07:56,858 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 11:07:57,928 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:09:42,364 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:09:58,222 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:10:18,921 basehttp 154 "POST /orders/comment/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:10:18,976 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 11:12:33,416 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/goods/views.py changed, reloading.
+INFO 2021-03-17 11:12:34,639 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:12:36,245 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 11:12:36,446 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:12:40,399 basehttp 154 "GET /list/113/1/ HTTP/1.1" 200 100148
+INFO 2021-03-17 11:12:40,535 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:12:40,536 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 11:12:42,105 basehttp 154 "GET /detail/16/ HTTP/1.1" 200 103441
+INFO 2021-03-17 11:12:42,134 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 304 0
+INFO 2021-03-17 11:12:42,303 basehttp 154 "GET /hot/113/ HTTP/1.1" 200 459
+INFO 2021-03-17 11:12:42,307 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:12:42,320 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:12:42,329 basehttp 154 "GET /comments/16/ HTTP/1.1" 200 213
+INFO 2021-03-17 11:12:42,347 basehttp 154 "POST /visit/113/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:12:54,699 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 11:12:54,861 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:12:59,331 basehttp 154 "GET /list/155/1/ HTTP/1.1" 200 98386
+INFO 2021-03-17 11:12:59,464 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 11:12:59,464 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:13:01,355 basehttp 154 "GET /detail/1/ HTTP/1.1" 200 104601
+INFO 2021-03-17 11:13:01,501 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:13:01,517 basehttp 154 "GET /comments/1/ HTTP/1.1" 200 175
+INFO 2021-03-17 11:13:01,520 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:13:01,521 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 11:13:01,532 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:13:48,847 basehttp 154 "GET /detail/1/ HTTP/1.1" 200 104600
+INFO 2021-03-17 11:13:49,025 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:13:49,026 basehttp 154 "GET /comments/1/ HTTP/1.1" 200 175
+INFO 2021-03-17 11:13:49,031 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:13:49,033 basehttp 154 "GET /hot/155/ HTTP/1.1" 200 548
+INFO 2021-03-17 11:13:49,035 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 11:13:49,036 basehttp 154 "POST /visit/155/ HTTP/1.1" 200 29
+INFO 2021-03-17 11:13:53,310 basehttp 154 "GET / HTTP/1.1" 200 96379
+INFO 2021-03-17 11:13:53,458 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2021-03-17 11:15:35,753 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 11:15:59,086 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5613
+INFO 2021-03-17 11:15:59,107 basehttp 154 "GET /static/js/goods_judge.js HTTP/1.1" 200 5327
+INFO 2021-03-17 11:16:06,878 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 200 5613
+INFO 2021-03-17 11:16:06,937 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862
+INFO 2021-03-17 11:18:27,604 autoreload 211 /home/ding/PycharmProjects/mall/mall/apps/orders/views.py changed, reloading.
+INFO 2021-03-17 11:18:28,572 autoreload 584 Watching for file changes with StatReloader
+INFO 2021-03-17 11:18:35,524 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+WARNING 2021-03-17 11:18:43,943 log 222 Forbidden: /orders/comment/
+WARNING 2021-03-17 11:18:43,944 basehttp 154 "GET /orders/comment/?order_id=20210217152857000000003 HTTP/1.1" 403 24
+INFO 2021-03-17 11:18:48,428 basehttp 154 "GET /orders/info/1/ HTTP/1.1" 200 7423
+INFO 2021-03-17 11:18:48,494 basehttp 154 "GET /static/favicon.ico HTTP/1.1" 200 12862

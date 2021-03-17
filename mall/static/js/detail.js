@@ -91,7 +91,7 @@ var vm = new Vue({
             this.tab_content[name] = true;
         },
         get_hot_goods() {
-            var url = this.hots + '/hot/' + this.category_id + '/';
+            var url = this.host + '/hot/' + this.category_id + '/';
             axios.get(url, {
                 responseType: JSON
             })
@@ -128,7 +128,7 @@ var vm = new Vue({
         // 记录商品详情的访问量
         detail_visit() {
             if (this.category_id) {
-                var url = this.hots + '/visit/' + this.category_id + '/';
+                var url = this.host + '/visit/' + this.category_id + '/';
                 axios.post(url, {}, {
                     headers: {
                         'X-CSRFToken': getCookie('csrftoken')
@@ -198,6 +198,8 @@ var vm = new Vue({
                 })
                     .then(response => {
                         this.comments = response.data.comment_list;
+                        console.log(this.comments);
+
                         for (var i = 0; i < this.comments.length; i++) {
                             this.comments[i].score_class = this.score_classes[this.comments[i].score];
                         }
@@ -207,6 +209,11 @@ var vm = new Vue({
                     });
             }
         },
+        // 跳转商品评价
+        toComment() {
+            this.tab_content.detail = false;
+            this.tab_content.comment = true;
+        }
     }
 
 })

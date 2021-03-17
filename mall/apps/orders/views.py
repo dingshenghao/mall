@@ -214,8 +214,13 @@ def Order_Info(request):
 @login_required(login_url='/login/')
 def GoodsComment(request):
     if request.method == 'GET':
+        user_id = request.user.id
         order_id = request.GET.get('order_id')
-        goods_orders = OrderGoods.objects.filter(order_id=order_id)
+        try:
+            order_info = OrderInfo.objects.get(order_id=order_id, user_id=user_id, status=4)
+        except OrderInfo.DoesNotExist:
+            return HttpResponseForbidden('商品信息出现错误')
+        goods_orders = OrderGoods.objects.filter(order_id=order_info.order_id)
         skus = []
         for goods_order in goods_orders:
             sku_id = goods_order.sku_id
