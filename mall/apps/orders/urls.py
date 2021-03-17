@@ -23,4 +23,6 @@ urlpatterns = [
         path('orders/commit/', views.OrdersCommit, name='order_commit'),    # 提交订单
         path('orders/success/', views.OrdersSuccess, name='orders_success'),
         path('orders/info/1/', views.Order_Info, name='order_info'),
+
+        path('orders/comment/', views.GoodsComment, name='goods_comment'),
 ]

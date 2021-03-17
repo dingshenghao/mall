@@ -10,8 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="测试">
+    <list default="true" id="95b680a5-d302-491d-a4dc-b027382e74cf" name="Default Changelist" comment="环境">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/apps/orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/apps/orders/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/apps/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/apps/orders/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/mall/log/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +27,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="b47abe0e-d8b2-4b8d-afdc-893a6a87b77b" />
   <component name="ProjectId" id="1nwxtMStxZG6I7vnY8Y95JXVyGW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,10 +55,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/mall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall/static/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -60,11 +66,11 @@
       <recent name="$PROJECT_DIR$/mall/static/js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mall/static/js" />
       <recent name="$PROJECT_DIR$/mall/templates" />
+      <recent name="$PROJECT_DIR$/mall/static/images" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/mall/apps/goods" />
-      <recent name="$PROJECT_DIR$/mall/utils" />
-      <recent name="$PROJECT_DIR$/mall/apps/payment" />
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">
@@ -237,6 +243,11 @@
       <workItem from="1615196064068" duration="1347000" />
       <workItem from="1615204875711" duration="1404000" />
       <workItem from="1615274212418" duration="801000" />
+      <workItem from="1615346407602" duration="2958000" />
+      <workItem from="1615377640333" duration="8728000" />
+      <workItem from="1615685094732" duration="180000" />
+      <workItem from="1615904344011" duration="14000" />
+      <workItem from="1615904370141" duration="6359000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1615206092656</created>
@@ -252,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615274549752</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="环境">
+      <created>1615346538968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615346538968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="环境" />
   </component>
   <component name="WindowStateProjectService">
     <state x="65" y="24" width="2093" height="1188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613526477501">
@@ -280,67 +299,67 @@
     </state>
     <state x="709" y="265" width="872" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.2089.1184@65.24.2089.1184" timestamp="1612930073898" />
     <state x="65" y="24" width="2093" height="1188" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613526477501" />
-    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613396847245">
+    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615904402931">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
-    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613396847245" />
+    <state x="849" y="352" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1615904402931" />
     <state x="797" y="24" key="EnvironmentVariablesDialog" timestamp="1613526476102">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state x="797" y="24" key="EnvironmentVariablesDialog/65.24.2093.1188@65.24.2093.1188" timestamp="1613526476102" />
-    <state x="840" y="363" key="FileChooserDialogImpl" timestamp="1615200051743">
+    <state x="840" y="363" key="FileChooserDialogImpl" timestamp="1615357472282">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
-    <state x="840" y="363" key="FileChooserDialogImpl/65.24.2093.1188@65.24.2093.1188" timestamp="1615200051743" />
-    <state width="2041" height="348" key="GridCell.Tab.0.bottom" timestamp="1615276672183">
+    <state x="840" y="363" key="FileChooserDialogImpl/65.24.2093.1188@65.24.2093.1188" timestamp="1615357472282" />
+    <state width="2039" height="477" key="GridCell.Tab.0.bottom" timestamp="1615944829937">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.0.bottom/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605970" />
-    <state width="2041" height="348" key="GridCell.Tab.0.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1615276672183" />
-    <state width="2041" height="348" key="GridCell.Tab.0.center" timestamp="1615276672181">
+    <state width="2039" height="477" key="GridCell.Tab.0.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1615944829937" />
+    <state width="2039" height="477" key="GridCell.Tab.0.center" timestamp="1615944829936">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.0.center/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605968" />
-    <state width="2041" height="348" key="GridCell.Tab.0.center/65.24.2093.1188@65.24.2093.1188" timestamp="1615276672181" />
-    <state width="2041" height="348" key="GridCell.Tab.0.left" timestamp="1615276672180">
+    <state width="2039" height="477" key="GridCell.Tab.0.center/65.24.2093.1188@65.24.2093.1188" timestamp="1615944829936" />
+    <state width="2039" height="477" key="GridCell.Tab.0.left" timestamp="1615944829935">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.0.left/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605968" />
-    <state width="2041" height="348" key="GridCell.Tab.0.left/65.24.2093.1188@65.24.2093.1188" timestamp="1615276672180" />
-    <state width="2041" height="348" key="GridCell.Tab.0.right" timestamp="1615276672182">
+    <state width="2039" height="477" key="GridCell.Tab.0.left/65.24.2093.1188@65.24.2093.1188" timestamp="1615944829935" />
+    <state width="2039" height="477" key="GridCell.Tab.0.right" timestamp="1615944829937">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.0.right/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605969" />
-    <state width="2041" height="348" key="GridCell.Tab.0.right/65.24.2093.1188@65.24.2093.1188" timestamp="1615276672182" />
-    <state width="2041" height="390" key="GridCell.Tab.1.bottom" timestamp="1613436409146">
+    <state width="2039" height="477" key="GridCell.Tab.0.right/65.24.2093.1188@65.24.2093.1188" timestamp="1615944829937" />
+    <state width="2039" height="387" key="GridCell.Tab.1.bottom" timestamp="1615944533737">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.1.bottom/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605972" />
-    <state width="2041" height="390" key="GridCell.Tab.1.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409146" />
-    <state width="2041" height="390" key="GridCell.Tab.1.center" timestamp="1613436409145">
+    <state width="2039" height="387" key="GridCell.Tab.1.bottom/65.24.2093.1188@65.24.2093.1188" timestamp="1615944533737" />
+    <state width="2039" height="387" key="GridCell.Tab.1.center" timestamp="1615944533736">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.1.center/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605971" />
-    <state width="2041" height="390" key="GridCell.Tab.1.center/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409145" />
-    <state width="2041" height="390" key="GridCell.Tab.1.left" timestamp="1613436409144">
+    <state width="2039" height="387" key="GridCell.Tab.1.center/65.24.2093.1188@65.24.2093.1188" timestamp="1615944533736" />
+    <state width="2039" height="387" key="GridCell.Tab.1.left" timestamp="1615944533735">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.1.left/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605970" />
-    <state width="2041" height="390" key="GridCell.Tab.1.left/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409144" />
-    <state width="2041" height="390" key="GridCell.Tab.1.right" timestamp="1613436409145">
+    <state width="2039" height="387" key="GridCell.Tab.1.left/65.24.2093.1188@65.24.2093.1188" timestamp="1615944533735" />
+    <state width="2039" height="387" key="GridCell.Tab.1.right" timestamp="1615944533737">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state width="2037" height="406" key="GridCell.Tab.1.right/65.24.2089.1184@65.24.2089.1184" timestamp="1612964605972" />
-    <state width="2041" height="390" key="GridCell.Tab.1.right/65.24.2093.1188@65.24.2093.1188" timestamp="1613436409145" />
+    <state width="2039" height="387" key="GridCell.Tab.1.right/65.24.2093.1188@65.24.2093.1188" timestamp="1615944533737" />
     <state x="626" y="351" key="IDE.errors.dialog" timestamp="1615276590293">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state x="626" y="351" key="IDE.errors.dialog/65.24.2093.1188@65.24.2093.1188" timestamp="1615276590293" />
-    <state x="530" y="106" key="SettingsEditor" timestamp="1615206060945">
+    <state x="874" y="197" width="1174" height="903" key="SettingsEditor" timestamp="1615943286662">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
     <state x="634" y="239" key="SettingsEditor/65.24.2089.1184@65.24.2089.1184" timestamp="1612930209683" />
-    <state x="530" y="106" key="SettingsEditor/65.24.2093.1188@65.24.2093.1188" timestamp="1615206060945" />
+    <state x="874" y="197" width="1174" height="903" key="SettingsEditor/65.24.2093.1188@65.24.2093.1188" timestamp="1615943286662" />
     <state x="921" y="452" width="440" height="303" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1613290204634">
       <screen x="65" y="24" width="2093" height="1188" />
     </state>
@@ -365,13 +384,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mall/apps/orders/views.py</url>
-          <line>190</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception" />
         <breakpoint enabled="true" type="django-exception">
@@ -390,6 +402,6 @@
     <SUITE FILE_PATH="coverage/mall$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1613023158092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/contents" />
     <SUITE FILE_PATH="coverage/mall$fdfs.coverage" NAME="fdfs Coverage Results" MODIFIED="1613547640119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/utils/fastdfs" />
     <SUITE FILE_PATH="coverage/mall$views.coverage" NAME="views Coverage Results" MODIFIED="1612851484942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mall/apps/user" />
-    <SUITE FILE_PATH="coverage/mall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1615274298534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mall$manage.coverage" NAME="manage Coverage Results" MODIFIED="1615944829917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

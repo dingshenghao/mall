@@ -210,3 +210,58 @@ def Order_Info(request):
         page_orders.append(order_info)
     return render(request, 'user_center_order.html', {'page_orders': page_orders})
 
+
+@login_required(login_url='/login/')
+def GoodsComment(request):
+    if request.method == 'GET':
+        order_id = request.GET.get('order_id')
+        goods_orders = OrderGoods.objects.filter(order_id=order_id)
+        skus = []
+        for goods_order in goods_orders:
+            sku_id = goods_order.sku_id
+            try:
+                sku_model = SKU.objects.get(id=sku_id)
+                sku = {
+                    'order_id': goods_order.order_id,
+                    'sku_id': sku_model.id,
+                    'name': sku_model.name,
+                    'price': str(sku_model.price),
+                    'default_image_url': sku_model.default_image.url,
+                    'score': goods_order.score,
+                    'comment': goods_order.comment,
+                    'is_anonymous': str(goods_order.is_anonymous)
+                }
+                skus.append(sku)
+            except SKU.DoesNotExist:
+                return HttpResponseForbidden('商品不存在')
+    elif request.method == 'POST':
+        user_id = request.user.id
+        query_dict = json.loads(request.body.decode())
+        order_id = query_dict['order_id']
+        sku_id = query_dict['sku_id']
+        comment = query_dict['comment']
+        score = query_dict['score']
+        is_anonymous = query_dict['is_anonymous']
+        if not all([order_id, sku_id, comment]):
+            return HttpResponseForbidden('缺少比传参数')
+        if not isinstance(is_anonymous, bool):
+            return HttpResponseForbidden('参数类型错误')
+        try:
+            goods_order_model = OrderGoods.objects.get(order_id=order_id, sku_id=sku_id)
+            sku = SKU.objects.get(id=sku_id)
+        except SKU.DoesNotExist:
+            return HttpResponseForbidden('商品不存在')
+        goods_order_model.comment = comment
+        goods_order_model.score = score
+        goods_order_model.is_anonymous = is_anonymous
+        goods_order_model.is_commented = True
+        sku.comments += 1
+        sku.save()
+        goods_order_model.save()
+        goods_orders_model = OrderGoods.objects.filter(order_id=order_id)
+        for goods_order in goods_orders_model:
+            if goods_order.is_commented:
+                pass
+        OrderInfo.objects.filter(order_id=order_id, user_id=user_id).update(status=5)
+        return JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK'})
+    return render(request, 'goods_judge.html', {'skus': skus})
