@@ -149,12 +149,19 @@ def GoodsComments(request, sku_id):
                 user = User.objects.get(id=user_id)
             except User.DoesNotExist:
                 return HttpResponseForbidden('用户信息错误')
-            comment = {
-                'name': user.username,
-                'content': order_goods_model.comment,
-                'score': order_goods_model.score
-            }
-
+            # 判断是否时匿名评价
+            if order_goods_model.is_anonymous:
+                comment = {
+                    'name': user.username[0:2] + '*****',
+                    'content': order_goods_model.comment,
+                    'score': order_goods_model.score
+                }
+            else:
+                comment = {
+                    'name': user.username,
+                    'content': order_goods_model.comment,
+                    'score': order_goods_model.score
+                }
             comment_list.append(comment)
             print(comment_list)
         return JsonResponse({"code": RETCODE.OK, 'errmsg': 'OK', 'comment_list': comment_list})
