@@ -80,17 +80,12 @@ def OrdersCommit(request):
             logger.error(e)
             return HttpResponseForbidden('支付方式有误')
         user = request.user
-
         # 用户订单编号模式
         order_id = datetime.now().strftime('%Y%m%d%H%M%S') + ('%09d' % user.id)
-
         with transaction.atomic():  # 手动开启数据库事物
-
             try:
-
                 # 创建事务保存点
                 save_point = transaction.savepoint()
-
                 order = OrderInfo.objects.create(
                     order_id=order_id,
                     user_id=user.id,
@@ -103,7 +98,6 @@ def OrdersCommit(request):
                         'ALIPAY'] else
                     OrderInfo.ORDER_STATUS_ENUM['UNSEND']
                 )
-                print(order)
                 redis_coon = get_redis_connection('carts')
                 sku_ids = redis_coon.hgetall('cart_%d' % user.id)
                 selected_ids = redis_coon.smembers('selected_%d' % user.id)
@@ -115,38 +109,27 @@ def OrdersCommit(request):
                     while True:  # 给用户无限次数的下单机会
                         sku = SKU.objects.get(id=sku_id)
                         buy_count = carts[sku_id]
-                        # 修改sku销量与库存
-                        origin_stock = sku.stock  # sku原库存
-                        origin_sales = sku.sales  # sku原销量
-                        # 判断购买数量是否大于库存
+                        origin_stock = sku.stock
+                        origin_sales = sku.sales
                         if buy_count > origin_stock:
-                            transaction.savepoint_rollback(save_point)  # 下单失败，回滚到事物保存点
+                            transaction.savepoint_rollback(save_point)  # 失败 事物回滚
                             return JsonResponse({'code': RETCODE.STOCKERR, 'errmsg': '库存不足'})
-                        # 购买成功，修改sku销量与库存
-                        # sku.stock = origin_stock - buy_count
-                        # sku.sales = origin_sales + buy_count
-                        # sku.save()
                         # 使用乐观锁修改数据库
                         result = SKU.objects.filter(id=sku_id, stock=origin_stock).update(
                             stock=origin_stock - buy_count, sales=origin_sales + buy_count)
                         # 如果下单失败,给用户无限次下单机会,只到成功或库存不足
                         if result == 0:
                             continue
-                        # 修改spu销量
                         spu = SPU.objects.get(id=sku.spu_id)
                         origin_sales = spu.sales
-                        # spu.sales = buy_count + origin_sales
-                        # spu.save()
                         # 使用乐观锁修改数据库
                         SPU.objects.filter(id=sku.spu_id).update(sales=buy_count + origin_sales)
-                        # 保存订单
                         OrderGoods.objects.create(
                             order_id=order_id,
                             sku_id=sku_id,
                             count=buy_count,
                             price=sku.price
                         )
-                        # 保存商品订单中总价和总数量
                         order.total_count += buy_count
                         order.total_amount += (buy_count * sku.price)
                         break

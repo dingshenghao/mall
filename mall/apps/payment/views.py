@@ -35,14 +35,13 @@ def Payments(request, order_id):
             sign_type="RSA2",  # RSA 或者 RSA2
             debug=settings.ALIPAY_DEBUG,  # 默认False
         )
-
         # 电脑网站支付，需要跳转到https://openapi.alipay.com/gateway.do? + order_string
         order_string = alipay.api_alipay_trade_page_pay(
             out_trade_no=order_id,  # 订单编号
-            total_amount=str(order.total_amount),  # 支付总金额   注意将Decimal转成字符串
-            subject='天天商城:%s' % order_id,  # 标题
+            total_amount=str(order.total_amount),  # 支付总金额
+            subject='唯品商城:%s' % order_id,  # 标题
             return_url=settings.ALIPAY_RETURN_URL,  # 支付成功后重定向的url
-            # notify_url="https://example.com/notify"  # 可选, 不填则使用默认notify url
+            # notify_url="https://example.com/notify"  # 可选
         )
         # 拼接支付宝url
         # 真实环境电脑网站支付网关：https://openapi.alipay.com/gateway.do? + order_string
@@ -62,7 +61,7 @@ def PaymentStatus(request):
             appid=settings.ALIPAY_APPID,
             app_notify_url=None,  # 默认回调url
             app_private_key_string=app_private_key_string,
-            # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+            # 支付宝的公钥，验证支付宝回传消息使用，不是自己的公钥,
             alipay_public_key_string=alipay_public_key_string,
             sign_type="RSA2",  # RSA 或者 RSA2
             debug=settings.ALIPAY_DEBUG,  # 默认False

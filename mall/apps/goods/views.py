@@ -27,20 +27,20 @@ def GoodsList(request, category_id, page_num):
         sort_field = '-create_time'
     sku_qs = SKU.objects.filter(is_launched=True, category_id=category_id).order_by(sort_field)     # 查询出上架的数据按时间排序
     # 自定义分页器
-    paginator = Paginator(sku_qs, 5)    # 一页显示5条数据
-    total_page = paginator.num_pages    # 总页数
+    paginator = Paginator(sku_qs, 5)
+    total_page = paginator.num_pages
     try:
-        page_skus = paginator.page(page_num)   # 获取指定页的数据
+        page_skus = paginator.page(page_num)
     except EmptyPage:
         return HttpResponseForbidden('没有指定页')
     context = {
         'categories': get_categories(),
-        'breadcrumb': get_breadcrumb(cat3),  # 面包屑导航数据
-        'category': cat3,  # 三级类别
-        'page_skus': page_skus,  # 指定页中所有sku商品数据
-        'page_num': page_num,  # 当前显示第几页
-        'total_page': total_page,  # 总页数
-        'sort': sort,  # 当前按照什么规则排序
+        'breadcrumb': get_breadcrumb(cat3),
+        'category': cat3,
+        'page_skus': page_skus,
+        'page_num': page_num,
+        'total_page': total_page,
+        'sort': sort,
     }
     return render(request, 'list.html', context=context)
 
@@ -163,5 +163,4 @@ def GoodsComments(request, sku_id):
                     'score': order_goods_model.score
                 }
             comment_list.append(comment)
-            print(comment_list)
         return JsonResponse({"code": RETCODE.OK, 'errmsg': 'OK', 'comment_list': comment_list})

@@ -1,1 +1,168 @@
-*{margin: 0;padding: 0;}.register_con {width: 720px;overflow: hidden;margin: 50px auto 0;background: url('../images/interval_line.png') 300px center no-repeat;}  .l_con {width: 300px;}.l_con img {width: 200px;height: 70px;margin-left: 20px;}  .reg_slogan {color: red;font-size: 20px;margin: 20px 20px 0 0;}  .reg_banner {width: 251px;height: 329px;background: url("../images/register_banner.png") no-repeat;float: right;margin: 20px 10px 0 0;opacity: 0.5}  .r_con {width: 420px;overflow: hidden;}.reg_title {width: 380px;height: 50px;float: left;margin-left: 30px;border-bottom: 1px solid #e0e0e0} .reg_title h1 {height: 50px;line-height: 50px;float: left;font-size: 24px;color: #a8a8a8;font-weight: bold;}  .reg_title a {float: right;height: 20px;line-height: 20px;font-size: 16px;color: #c40000;padding-right: 20px;background: url('../images/icons02.png') 35px 3px no-repeat;margin-top: 15px}  .reg_form {width: 390px;margin: 30px 0 0 30px;float: left;position: relative;}  .reg_form li {height: 70px;}  .reg_form li label {width: 75px;height: 40px;line-height: 40px;float: left;font-size: 14px;color: #a8a8a8;text-align: right;padding-right: 10px;}  .reg_form li input {width: 288px;height: 38px;border: 1px solid #e0e0e0;float: left;outline: none;text-indent: 10px;background-color: #f8f8f8}  .reg_form li .msg_input, .reg_form li .msg_input {width: 170px;}  .reg_form .get_msg_code {float: left;width: 118px;height: 38px;text-align: center;line-height: 38px;border: 1px solid #e0e0e0;margin-left: 10px;color: #333;}  .reg_form .get_msg_code:hover {color: #f80000;}  .reg_form .pic_code {float: left;width: 110px;height: 40px;margin-left: 10px;}  .reg_form li.agreement input {width: 15px;height: 15px;float: left;margin-top: 13px;margin-left: 87px;}  .reg_form li.agreement label {width: 250px;float: left;margin-left: 10px;text-align: left;}  .reg_form li.reg_sub input {width: 380px;height: 40px;background-color: #ff5757;font-size: 18px;color: #fff;font-family: 'Microsoft Yahei';cursor: pointer;}  .reg_form li .error_tip {float: left;height: 30px;line-height: 30px;margin-left: 87px;color: #e62e2e;}  .reg_form li .error_tip2 {float: left;height: 20px;line-height: 20px;margin-left: 87px;color: #e62e2e;}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.register_con {
+    width: 720px;
+    overflow: hidden;
+    margin: 50px auto 0;
+    background: url('../images/interval_line.png') 300px center no-repeat;
+}
+
+.l_con {
+    width: 300px;
+}
+
+.l_con img {
+    width: 220px;
+    height: 120px;
+    margin-left: 20px;
+}
+
+.reg_slogan {
+    color: red;
+    font-size: 20px;
+    margin: 20px 20px 0 0;
+}
+
+.reg_banner {
+    width: 251px;
+    height: 329px;
+    background: url("../images/register_banner.png") no-repeat;
+    float: right;
+    margin: 20px 10px 0 0;
+    opacity: 0.5
+}
+
+.r_con {
+    width: 420px;
+    overflow: hidden;
+}
+
+.reg_title {
+    width: 380px;
+    height: 50px;
+    float: left;
+    margin-left: 30px;
+    border-bottom: 1px solid #e0e0e0
+}
+
+.reg_title h1 {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-size: 24px;
+    color: #a8a8a8;
+    font-weight: bold;
+}
+
+.reg_title a {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #c40000;
+    padding-right: 20px;
+    background: url('../images/icons02.png') 35px 3px no-repeat;
+    margin-top: 15px
+}
+
+.reg_form {
+    width: 390px;
+    margin: 30px 0 0 30px;
+    float: left;
+    position: relative;
+}
+
+.reg_form li {
+    height: 70px;
+}
+
+.reg_form li label {
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 14px;
+    color: #a8a8a8;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.reg_form li input {
+    width: 288px;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    outline: none;
+    text-indent: 10px;
+    background-color: #f8f8f8
+}
+
+.reg_form li .msg_input, .reg_form li .msg_input {
+    width: 170px;
+}
+
+.reg_form .get_msg_code {
+    float: left;
+    width: 118px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #e0e0e0;
+    margin-left: 10px;
+    color: #333;
+}
+
+.reg_form .get_msg_code:hover {
+    color: #f80000;
+}
+
+.reg_form .pic_code {
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.reg_form li.agreement input {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 13px;
+    margin-left: 87px;
+}
+
+.reg_form li.agreement label {
+    width: 250px;
+    float: left;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.reg_form li.reg_sub input {
+    width: 380px;
+    height: 40px;
+    background-color: #ff5757;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Microsoft Yahei';
+    cursor: pointer;
+}
+
+.reg_form li .error_tip {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 87px;
+    color: #e62e2e;
+}
+
+.reg_form li .error_tip2 {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 87px;
+    color: #e62e2e;
+}

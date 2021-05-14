@@ -98,11 +98,9 @@ def Carts(request):
             """获取cookie中的数据"""
             cart_str = request.COOKIES.get('carts')
             if cart_str:
-                # 将cookie中的字符串转换为字典
                 cart_dict = pickle.loads(base64.b64decode(cart_str.encode()))
                 pass
             else:
-                # 如果没有从cookie获取数据，直接渲染空白页面
                 return render(request, 'cart.html')
         sku_ids = SKU.objects.filter(id__in=cart_dict.keys())
         sku_list = []

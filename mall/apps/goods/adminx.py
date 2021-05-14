@@ -37,8 +37,8 @@ xadmin.site.register(views.BaseAdminView, BaseSetting)
 
 class GlobalSettings(object):
     """xadmin的全局配置"""
-    site_title = "天天商城运营管理系统"  # 设置站点标题
-    site_footer = "天天商城集团有限公司"  # 设置站点的⻚脚
+    site_title = "唯品商城运营管理系统"  # 设置站点标题
+    site_footer = "唯品商城集团有限公司"  # 设置站点的⻚脚
     menu_style = "accordion"  # 设置菜单折叠
 
 

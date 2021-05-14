@@ -10,7 +10,7 @@ let app = new Vue({
     },
     methods: {
         oper_btn_click(order_id, status) {
-            if (status === '1') {
+            if (status === 1) {
                 // 待支付
                 let url = this.host + '/payment/' + order_id + '/';
                 axios.get(url, {
@@ -30,10 +30,7 @@ let app = new Vue({
             } else if (status === 4) {
                 // 待评价
                 location.href = '/orders/comment/?order_id=' + order_id;
-            } else if (status === 1) {
-                // 待支付
-                location.href = '/payment/' + order_id;
-            }else {
+            } else {
                 // 其他
                 location.href = '/';
             }

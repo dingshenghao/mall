@@ -78,6 +78,7 @@ def ImageCode(request, uuid):
     return HttpResponse(image_bytes, content_type='image/png')
 
 
+# 发送短信验证码
 def SmsCode(request, mobile):
     redis_coon = get_redis_connection('verify_code')
     sms_flag_mobile = redis_coon.get('sms_flag_%s' % mobile)
@@ -120,6 +121,7 @@ def check_username(request, username):
         'code': RETCODE.OK,
         'errmsg': 'ok'
     }
+    print(data)
     return JsonResponse(data)
 
 
@@ -149,7 +151,7 @@ def Login(request):
         if user is None:
             return render(request, 'login.html', {'account_errmsg': '用户名或密码错误'})
         login(request, user)
-        if remembered is None:  # 如果不点记住登录，则设置session过期时间位0
+        if remembered is None:  # 如果不点记住登录，则设置session过期时间为0
             request.session.set_expiry(0)
         else:
             request.session.set_expiry(3600 * 24 * 7)  # 设置7天时间
@@ -182,7 +184,6 @@ def UserCenterInfo(request):
 @login_required(login_url='/login/')
 def SendEmail(request):
     if request.method == 'PUT':
-        # 接收请求体非表单数据 body  bytes-->str-->json
         json_dict = json.loads(request.body.decode())
         email = json_dict.get('email')
         if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
@@ -191,12 +192,6 @@ def SendEmail(request):
         if user.email != email:
             user.email = email
             user.save()
-        # 给当前设置的邮箱发一封激活url
-        # 发送一封邮件
-        #          标题           内容           发送者              接收者
-        # send_mail('美国大选', '拜登当选美国总统', EMAIL_FROM, ['2896531646@qq.com'])
-        # send_mail('激活连接', '无标题', EMAIL_FROM, ['908953210@qq.com'], html_message=None)
-        # 生成token值
         token = token_confirm.generate_validate_token(user.id)
         verify_url = EMAIL_VERIFY_URL + '?token=' + token
         # 使用celery异步发送邮件
@@ -289,7 +284,6 @@ def Addresses(request):
 @login_required(login_url='/login/')
 def AddressCreate(request):
     if request.method == 'POST':
-        # 接受请求体非表单提交的数据
         json_dict = json.loads(request.body.decode())
         title = json_dict.get('title')
         receiver = json_dict.get('receiver')
@@ -327,11 +321,9 @@ def AddressCreate(request):
         except DatabaseError as e:
             logger.error(e)
             return HttpResponseForbidden('新增收货地址错误')
-        # 判断用户是否由默认收获地址
         if user.default_address_id is None:
             user.default_address_id = address.id
             user.save()
-        # 将新增好的address模型对象转换成字典
         address_dict = {
             'id': address.id,
             'title': address.title,
@@ -388,7 +380,6 @@ def ChangeAddress(request, id):
         address.tel = tel
         address.email = email
         address.save()
-        # 将修改好的address模型对象转换成字典
         address_dict = {
             'id': address.id,
             'title': address.title,
@@ -404,7 +395,6 @@ def ChangeAddress(request, id):
             'tel': address.tel,
             'email': address.email
         }
-        # 响应
         return JsonResponse({'code': RETCODE.OK, 'errmsg': '修改收货地址成功', 'address': address_dict})
     elif request.method == 'DELETE':
         user = request.user

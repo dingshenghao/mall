@@ -270,7 +270,7 @@ EMAIL_HOST_PASSWORD = 'yygesfimydbjbebd'
 EMAIL_FROM = 'python<908953210@qq.com>'
 
 # 激活邮箱链接
-EMAIL_VERIFY_URL = 'http://www.tiantian.site:8000/emails/verify/'
+EMAIL_VERIFY_URL = 'http://www.weipin.site:8000/emails/verify/'
 
 # django文件存储
 DEFAULT_FILE_STORAGE = 'mall.utils.fastdfs.fdfs_storage.FdfsStorage'
@@ -283,7 +283,7 @@ FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 ALIPAY_APPID = '2016110200787031'
 ALIPAY_DEBUG = True  # 表示是沙箱环境还是真实支付环境
 ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'
-ALIPAY_RETURN_URL = 'http://www.tiantian.site:8000/payment/status/'
+ALIPAY_RETURN_URL = 'http://www.weipin.site:8000/payment/status/'
 
 
 # Haystack

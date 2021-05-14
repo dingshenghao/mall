@@ -19,7 +19,7 @@ from user import views
 
 app_name = 'user'
 urlpatterns = [
-    path('register/', views.Register, name='register'),    # 用户注册
+    path('register/', views.Register, name='register'),
     path('image_codes/<uuid>/', views.ImageCode, name='image_code'),
     path('send_codes/<mobile>/', views.SmsCode, name='sms_code'),
     path('usernames/<username>/count/', views.check_username, name='check_username'),
